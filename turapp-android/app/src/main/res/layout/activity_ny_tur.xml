@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/OverskriftText.NyTur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/avreisedato" />
+
+        <DatePicker
+            android:id="@+id/dato_velger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="true"
+            android:spinnersShown="false" />
+
+        <TextView
+            style="@style/OverskriftText.NyTur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/avreisetidspunkt" />
+
+        <TimePicker
+            android:id="@+id/tid_velger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/OverskriftText.NyTur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ledige_plasser" />
+
+        <EditText
+            android:id="@+id/ledige_plasser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:inputType="number" />
+
+        <TextView
+            style="@style/OverskriftText.NyTur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/avreise" />
+
+        <Button
+            android:id="@+id/avreise_btn"
+            style="@style/KnappStil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/klikk_for_sette_avreise" />
+
+        <TextView
+            style="@style/OverskriftText.NyTur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/destinasjon" />
+
+        <Button
+            android:id="@+id/destinasjon_btn"
+            style="@style/KnappStil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/klikk_for_sette_destinasjon" />
+
+        <Button
+            android:id="@+id/registrer_reise_btn"
+            style="@style/KnappStil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="end"
+            android:text="@string/registrer" />
+
+    </LinearLayout>
+
+</ScrollView>

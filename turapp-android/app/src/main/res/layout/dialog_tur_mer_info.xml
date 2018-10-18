@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout som benyttes i TurMerInfoFragment.java -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/sjafor_overskrift"
+            style="@style/OverskriftText.NyTur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/sjafor" />
+
+        <TextView
+            android:id="@+id/sjafor_person"
+            style="@style/SecondaryText.TabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sjafor_overskrift"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/passasjerer_overskrift"
+            style="@style/OverskriftText.NyTur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sjafor_person"
+            android:gravity="center_horizontal"
+            android:text="@string/passasjerer" />
+
+        <TextView
+            android:id="@+id/passaser_liste"
+            style="@style/SecondaryText.TabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passasjerer_overskrift"
+            android:gravity="center_horizontal" />
+
+        <!-- Tekst settes i kode, enten "meld på" eller "kanseller" -->
+        <Button
+            android:id="@+id/tur_knapp"
+            style="@style/KnappStil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/passaser_liste"
+            android:layout_marginTop="4dp" />
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout som benyttes i InnstillingDialogFragmentment.java -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/innstillinger_overskrift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:text="@string/instillinger"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/navn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/innstillinger_overskrift"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/SecondaryText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/navn" />
+
+            <EditText
+                android:id="@+id/navn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nummer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/navn_layout"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/SecondaryText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/mobilnummer" />
+
+            <EditText
+                android:id="@+id/mobil_nummer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/epost_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nummer_layout"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/e_post_tv"
+                style="@style/SecondaryText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/e_post" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:id="@+id/e_post"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ok_btn"
+            style="@style/KnappStil"
+            android:layout_width="wrap_content"
+            android:layout_height="62dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:text="@string/ok" />
+
+        <Button
+            android:id="@+id/avbryt_btn"
+            style="@style/KnappStil"
+            android:layout_width="wrap_content"
+            android:layout_height="62dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/epost_layout"
+            android:layout_marginEnd="4dp"
+            android:layout_toStartOf="@id/ok_btn"
+            android:text="@string/avbryt" />
+
+    </RelativeLayout>
+</ScrollView>

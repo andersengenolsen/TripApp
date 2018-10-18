@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout for SokTurerActivity -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                style="@style/OverskriftText.NyTur.SokTur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/destinasjon" />
+
+            <TextView
+                android:id="@+id/destinasjon_adr_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/destinasjon_kart_btn"
+                style="@style/KnappStil"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="@string/velg_fra_kart" />
+
+        </LinearLayout>
+
+        <DatePicker
+            android:id="@+id/dato_velger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:calendarViewShown="true"
+            android:spinnersShown="false" />
+
+
+        <Button
+            android:id="@+id/sok_turer_btn"
+            style="@style/KnappStil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/s_k_turer" />
+
+
+        <FrameLayout
+            android:id="@+id/fragment_kontainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+</ScrollView>

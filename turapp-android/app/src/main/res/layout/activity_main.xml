@@ -1,0 +1,53 @@
+<!-- Layout benyttet i MainActivity.java -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout"
+    android:layout_width="match_parent"
+    android:id="@+id/main_container"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- View som holder hele layout'en på plass. -->
+    <View
+        android:id="@+id/anker"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical" />
+
+    <Button
+        android:id="@+id/ny_tur_btn"
+        style="@style/BokserIMain.venstre"
+        android:layout_above="@id/anker"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@id/anker"
+        android:text="@string/ny_tur" />
+
+
+    <Button
+        android:id="@+id/mine_turer_btn"
+        style="@style/BokserIMain.hoyre"
+        android:layout_above="@id/anker"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@id/anker"
+        android:text="@string/mine_turer" />
+
+
+    <Button
+        android:id="@+id/sok_turer_btn"
+        style="@style/BokserIMain.venstre"
+        android:layout_alignBottom="@id/anker"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/anker"
+        android:text="@string/s_k_turer" />
+
+
+    <Button
+        android:id="@+id/mine_steder_btn"
+        style="@style/BokserIMain.hoyre"
+        android:layout_alignBottom="@id/anker"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/anker"
+        android:text="@string/favoritt_steder" />
+
+</RelativeLayout>
+

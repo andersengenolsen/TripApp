@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Benyttet i RecyclerListeTurer, som altså viser en liste over turer. -->
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CustomCardView">
+
+    <RelativeLayout
+        style="@style/Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/avreise_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="@string/avreise" />
+
+        <TextView
+            android:id="@+id/avreise_adr"
+            style="@style/SecondaryText.TabLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/avreise_lbl" />
+
+
+        <TextView
+            android:id="@+id/avreise_tid"
+            style="@style/SecondaryText.TabLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/avreise_adr"
+            android:layout_below="@id/avreise_adr" />
+
+        <TextView
+            android:id="@+id/destinasjon_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/avreise_tid"
+            android:text="@string/destinasjon" />
+
+        <TextView
+            android:id="@+id/destinasjon_adr"
+            style="@style/SecondaryText.TabLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/destinasjon_lbl" />
+
+        <TextView
+            android:id="@+id/plasser_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/destinasjon_adr"
+            android:text="@string/ledige_plasser" />
+
+        <TextView
+            android:id="@+id/ledige_plasser"
+            style="@style/SecondaryText.TabLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/plasser_lbl" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

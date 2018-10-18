@@ -1,0 +1,113 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:itemBackground">@color/colorBackground</item>
+    </style>
+
+    <!-- LAYOUTS -->
+
+    <!-- Med padding -->
+    <style name="Layout" parent="AppTheme">
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <!-- Uten padding -->
+    <style name="LayoutNoPadding" parent="AppTheme">
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <!-- Recycler Views -->
+    <style name="RecyclerLayout">
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <!-- Card Views -->
+    <style name="CustomCardView" parent="CardView">
+        <item name="android:clickable">true</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="cardCornerRadius">2dp</item>
+        <item name="cardElevation">5dp</item>
+    </style>
+
+    <!-- TabLayout -->
+    <style name="TabLayout" parent="Widget.Design.TabLayout">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="tabTextColor">@color/colorWhite</item>
+        <item name="tabSelectedTextColor">@color/colorAccent</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabMode">fixed</item>
+        <item name="tabMaxWidth">0dp</item>
+    </style>
+
+    <!-- Tekst-stil -->
+    <style name="OverskriftText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="OverskriftText.NyTur" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="OverskriftText.NyTur.SokTur" parent="OverskriftText.NyTur">
+        <item name="android:gravity">left</item>
+    </style>
+
+    <!-- Bokser i MainActivity -->
+    <style name="BokserIMain">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/firkant_knapp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="BokserIMain.venstre" parent="BokserIMain">
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_toStartOf">@id/anker</item>
+    </style>
+
+    <style name="BokserIMain.hoyre" parent="BokserIMain">
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_toEndOf">@id/anker</item>
+    </style>
+
+    <!-- Sekundærtekst-stil -->
+    <style name="SecondaryText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorSecondaryText</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="SecondaryText.TabLayout" parent="SecondaryText">
+        <item name="android:paddingStart">4dp</item>
+        <item name="android:paddingEnd">4dp</item>
+    </style>
+
+    <!-- Knapp stil -->
+    <style name="KnappStil">
+        <item name="android:background">@drawable/standard_knapp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+</resources>
